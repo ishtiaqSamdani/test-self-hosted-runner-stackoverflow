@@ -1,0 +1,18 @@
+name: Current VM Information 1
+
+on:
+  push:
+    # workflow_dispatch:
+
+jobs:
+  vm_info_job1:
+    runs-on: quicksilver-2cpu-2gb
+    steps:
+    - name: Display current VM information
+      run: |
+        sleep 10
+        hostname
+
+
+
+
